@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxb3162d0x5dk"]
+[gd_scene load_steps=3 format=3 uid="uid://bxb3162d0x5dk"]
 
-[ext_resource type="Texture2D" uid="uid://c2r4tbefstdcp" path="res://Assets/BG-Static-Space.png" id="1_i5wvk"]
+[ext_resource type="Texture2D" path="res://Assets/BG-Static-Space.png" id="1_i5wvk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5wvk"]
+size = Vector2(1024, 186)
 
 [node name="Platform" type="Node2D"]
 
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_i5wvk")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2144, -2420)
+texture_filter = 1
+scale = Vector2(1, 0.18164063)
 texture = ExtResource("1_i5wvk")
