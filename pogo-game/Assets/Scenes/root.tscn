@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://cijwn6ftib2hu"]
+[gd_scene load_steps=3 format=3 uid="uid://cijwn6ftib2hu"]
 
 [ext_resource type="Texture2D" uid="uid://c2r4tbefstdcp" path="res://Assets/BG-Static-Space.png" id="1_skivu"]
+[ext_resource type="Texture2D" uid="uid://djj1orv1cpg3q" path="res://Assets/BG-Static.png" id="2_q7pxp"]
 
 [node name="Root" type="Node2D"]
 
 [node name="Platform" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Platform"]
+position = Vector2(-1717, -107)
 texture = ExtResource("1_skivu")
+
+[node name="InitialBG" type="Sprite2D" parent="."]
+position = Vector2(-2, -1941)
+texture = ExtResource("2_q7pxp")
