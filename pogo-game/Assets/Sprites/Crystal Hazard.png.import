@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cprqneof5apde"
-path="res://.godot/imported/Hearts.png-d9a1375c6217d0587fbe7dfd06e22a59.ctex"
+uid="uid://d1e71kaodqi36"
+path="res://.godot/imported/Crystal Hazard.png-74e55641bf69c8c8853e802efec8517d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Hearts.png"
-dest_files=["res://.godot/imported/Hearts.png-d9a1375c6217d0587fbe7dfd06e22a59.ctex"]
+source_file="res://Assets/Sprites/Crystal Hazard.png"
+dest_files=["res://.godot/imported/Crystal Hazard.png-74e55641bf69c8c8853e802efec8517d.ctex"]
 
 [params]
 

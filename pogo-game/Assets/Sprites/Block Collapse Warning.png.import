@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2r4tbefstdcp"
-path="res://.godot/imported/BG-Static-Space.png-c85cdca7df52d90d51f27f9f17ab16b2.ctex"
+uid="uid://d3awgxkm8ba57"
+path="res://.godot/imported/Block Collapse Warning.png-5299cabb8ed60207ef551d80e839c739.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BG-Static-Space.png"
-dest_files=["res://.godot/imported/BG-Static-Space.png-c85cdca7df52d90d51f27f9f17ab16b2.ctex"]
+source_file="res://Assets/Sprites/Block Collapse Warning.png"
+dest_files=["res://.godot/imported/Block Collapse Warning.png-5299cabb8ed60207ef551d80e839c739.ctex"]
 
 [params]
 

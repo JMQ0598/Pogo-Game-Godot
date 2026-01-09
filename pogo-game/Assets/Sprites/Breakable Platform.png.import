@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2iue5kmdas0s"
-path="res://.godot/imported/RedCircle.png-07d29e4fb64af9f6c42302778921ec00.ctex"
+uid="uid://d10rykarlhage"
+path="res://.godot/imported/Breakable Platform.png-02bb564633a53152db2b7f5b24c0dac8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/RedCircle.png"
-dest_files=["res://.godot/imported/RedCircle.png-07d29e4fb64af9f6c42302778921ec00.ctex"]
+source_file="res://Assets/Sprites/Breakable Platform.png"
+dest_files=["res://.godot/imported/Breakable Platform.png-02bb564633a53152db2b7f5b24c0dac8.ctex"]
 
 [params]
 

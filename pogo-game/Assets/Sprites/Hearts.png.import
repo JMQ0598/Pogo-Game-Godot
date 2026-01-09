@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d10rykarlhage"
-path="res://.godot/imported/Breakable Platform.png-86c57d32dc56915b4ed8340808c41da8.ctex"
+uid="uid://cprqneof5apde"
+path="res://.godot/imported/Hearts.png-cc1eb3f525c03d7ca906c26e50c0dae2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Breakable Platform.png"
-dest_files=["res://.godot/imported/Breakable Platform.png-86c57d32dc56915b4ed8340808c41da8.ctex"]
+source_file="res://Assets/Sprites/Hearts.png"
+dest_files=["res://.godot/imported/Hearts.png-cc1eb3f525c03d7ca906c26e50c0dae2.ctex"]
 
 [params]
 

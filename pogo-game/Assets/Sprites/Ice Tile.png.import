@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3awgxkm8ba57"
-path="res://.godot/imported/Block Collapse Warning.png-46f088f766cf396175ac6bfd4357e28f.ctex"
+uid="uid://kglpt2q7rerh"
+path="res://.godot/imported/Ice Tile.png-70c26becfa59504ce5e9fab36cd0449b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Block Collapse Warning.png"
-dest_files=["res://.godot/imported/Block Collapse Warning.png-46f088f766cf396175ac6bfd4357e28f.ctex"]
+source_file="res://Assets/Sprites/Ice Tile.png"
+dest_files=["res://.godot/imported/Ice Tile.png-70c26becfa59504ce5e9fab36cd0449b.ctex"]
 
 [params]
 

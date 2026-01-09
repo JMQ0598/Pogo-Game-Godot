@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1e71kaodqi36"
-path="res://.godot/imported/Crystal Hazard.png-9de1ef20ee49d965ddcbf35c727876e6.ctex"
+uid="uid://b8cca0820mlls"
+path="res://.godot/imported/Cube.png-7205a73cefd65fe9adbd48feafa59f16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Crystal Hazard.png"
-dest_files=["res://.godot/imported/Crystal Hazard.png-9de1ef20ee49d965ddcbf35c727876e6.ctex"]
+source_file="res://Assets/Sprites/Cube.png"
+dest_files=["res://.godot/imported/Cube.png-7205a73cefd65fe9adbd48feafa59f16.ctex"]
 
 [params]
 

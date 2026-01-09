@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kglpt2q7rerh"
-path="res://.godot/imported/Ice Tile.png-dad2d9bb56e795a4964fe44c6d726510.ctex"
+uid="uid://b2iue5kmdas0s"
+path="res://.godot/imported/RedCircle.png-99d73c067508ee5c2ccf0510af04dc39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ice Tile.png"
-dest_files=["res://.godot/imported/Ice Tile.png-dad2d9bb56e795a4964fe44c6d726510.ctex"]
+source_file="res://Assets/Sprites/RedCircle.png"
+dest_files=["res://.godot/imported/RedCircle.png-99d73c067508ee5c2ccf0510af04dc39.ctex"]
 
 [params]
 

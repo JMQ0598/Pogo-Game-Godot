@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8cca0820mlls"
-path="res://.godot/imported/Cube.png-34af0c509b3eb011d9ab62c32332ec7c.ctex"
+uid="uid://c2r4tbefstdcp"
+path="res://.godot/imported/BG-Static-Space.png-2b9e77c7ced53557a4e693d85e5f1e65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cube.png"
-dest_files=["res://.godot/imported/Cube.png-34af0c509b3eb011d9ab62c32332ec7c.ctex"]
+source_file="res://Assets/Sprites/BG-Static-Space.png"
+dest_files=["res://.godot/imported/BG-Static-Space.png-2b9e77c7ced53557a4e693d85e5f1e65.ctex"]
 
 [params]
 
