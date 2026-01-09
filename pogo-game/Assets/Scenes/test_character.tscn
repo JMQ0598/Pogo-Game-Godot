@@ -1,8 +1,19 @@
-[gd_scene format=3 uid="uid://dsowhyub8bnxn"]
+[gd_scene load_steps=4 format=3 uid="uid://dsowhyub8bnxn"]
+
+[ext_resource type="Script" uid="uid://ksd7ds182x1a" path="res://Assets/Scripts/test_character.gd" id="1_ivwok"]
+[ext_resource type="Texture2D" uid="uid://b8cca0820mlls" path="res://Assets/Sprites/Cube.png" id="2_qgf1u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otokt"]
+size = Vector2(64, 64)
 
 [node name="Test Character" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_ivwok")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_otokt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+texture = ExtResource("2_qgf1u")
