@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dsowhyub8bnxn"]
+
+[node name="Test Character" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
