@@ -1,5 +1,148 @@
-[gd_scene format=3 uid="uid://cw56xyjx7etgj"]
+[gd_scene load_steps=21 format=3 uid="uid://cw56xyjx7etgj"]
+
+[ext_resource type="Texture2D" uid="uid://b06bi5m8320tb" path="res://Assets/Sprites/Pogo_Girl.png" id="1_pg05t"]
+[ext_resource type="Texture2D" uid="uid://nkhhxvywn8rq" path="res://Assets/Sprites/Pogo Girl Fall.png" id="2_5unk0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6e2fe"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(9, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bs55q"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(41, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_faido"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(73, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvwcb"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(105, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wfhe"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(137, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dy2xj"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(169, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csiow"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(201, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5lo7"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(233, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iyk4s"]
+atlas = ExtResource("1_pg05t")
+region = Rect2(265, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kwnv1"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(9, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0e7u"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(41, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgihj"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(73, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0ggx"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(105, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2dyb"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(137, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b4qf"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(169, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p51a0"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(201, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dogg0"]
+atlas = ExtResource("2_5unk0")
+region = Rect2(233, 0, 20, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmyka"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6e2fe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bs55q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_faido")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvwcb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wfhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dy2xj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csiow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5lo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iyk4s")
+}],
+"loop": true,
+"name": &"bounce",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kwnv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0e7u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgihj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0ggx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2dyb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b4qf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p51a0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dogg0")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}]
 
 [node name="PogoGirl" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(108, 53)
+sprite_frames = SubResource("SpriteFrames_qmyka")
+animation = &"bounce"
+frame_progress = 0.55949926
