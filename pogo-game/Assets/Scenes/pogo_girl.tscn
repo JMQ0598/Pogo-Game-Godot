@@ -140,8 +140,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5unk0"]
 size = Vector2(11, 2)
 
-[node name="PogoGirl" type="Node2D"]
-position = Vector2(-1, 0)
+[node name="PogoGirl" type="CharacterBody2D"]
+position = Vector2(211, 137)
 script = ExtResource("1_5unk0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -150,9 +150,7 @@ sprite_frames = SubResource("SpriteFrames_qmyka")
 animation = &"bounce"
 frame_progress = 0.6637431
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-3.5, 15)
 shape = SubResource("RectangleShape2D_5unk0")
