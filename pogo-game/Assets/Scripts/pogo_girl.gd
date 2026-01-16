@@ -1,8 +1,8 @@
-extends Node2D
+extends CharacterBody2D
 
 
 
-## var isMidair: bool = true
+var isMidair: bool = true
 @export var speed: int = 1000
 @export var jump_speed = -1800
 @export var gravity: int = 4000
@@ -20,9 +20,11 @@ func _process(delta: float) -> void:
 	pass
 		
 func _physics_process(delta: float) -> void:
-##	if isMidair:
+	velocity.y = gravity * delta
+	if isMidair:
 		var dir = Input.get_axis('walk_left','walk_right')
 		if dir != 0:
-			$CharacterBody2D.velocity.x = lerp($CharacterBody2D.velocity.x, dir * speed, acceleration)
+			velocity.x = lerp(velocity.x, dir * speed, acceleration)
 		else:
-			$CharacterBody2D.velocity.x = lerp($CharacterBody2D.velocity.x, 0.0, friction)
+			velocity.x = lerp(velocity.x, 0.0, friction)
+	move_and_slide()
