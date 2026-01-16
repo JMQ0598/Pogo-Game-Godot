@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxb3162d0x5dk"]
+[gd_scene load_steps=4 format=3 uid="uid://bxb3162d0x5dk"]
 
 [ext_resource type="Texture2D" uid="uid://c2r4tbefstdcp" path="res://Assets/Sprites/BG-Static-Space.png" id="1_i5wvk"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_i5wvk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i5wvk"]
 size = Vector2(1024, 186)
 
-[node name="Platform" type="RigidBody2D"]
+[node name="Platform" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_i5wvk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

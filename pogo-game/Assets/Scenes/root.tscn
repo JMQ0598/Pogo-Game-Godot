@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cijwn6ftib2hu"]
+[gd_scene load_steps=6 format=3 uid="uid://cijwn6ftib2hu"]
 
+[ext_resource type="PackedScene" uid="uid://dudx0gs6bucav" path="res://Assets/Scenes/boulder.tscn" id="1_morkg"]
 [ext_resource type="PackedScene" uid="uid://bxb3162d0x5dk" path="res://Assets/Scenes/platform.tscn" id="2_6o2em"]
 [ext_resource type="Texture2D" uid="uid://djj1orv1cpg3q" path="res://Assets/Sprites/BG-Static.png" id="2_q7pxp"]
 [ext_resource type="PackedScene" uid="uid://dsowhyub8bnxn" path="res://Assets/Scenes/test_character.tscn" id="3_6o2em"]
@@ -20,3 +21,7 @@ position = Vector2(0, 196)
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("follow_target")]
 script = ExtResource("4_wmxxr")
 follow_target = NodePath("../Test Character")
+
+[node name="Boulder" parent="." instance=ExtResource("1_morkg")]
+position = Vector2(-200, -204)
+scale = Vector2(2.5, 2.5)
