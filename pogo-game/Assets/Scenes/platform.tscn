@@ -5,14 +5,12 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i5wvk"]
 size = Vector2(1024, 186)
 
-[node name="Platform" type="Node2D"]
-
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-shape = SubResource("RectangleShape2D_i5wvk")
+[node name="Platform" type="RigidBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(1, 0.18164063)
 texture = ExtResource("1_i5wvk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_i5wvk")
