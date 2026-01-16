@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cijwn6ftib2hu"]
+[gd_scene load_steps=4 format=3 uid="uid://cijwn6ftib2hu"]
 
 [ext_resource type="PackedScene" uid="uid://bxb3162d0x5dk" path="res://Assets/Scenes/platform.tscn" id="2_6o2em"]
+[ext_resource type="Texture2D" uid="uid://djj1orv1cpg3q" path="res://Assets/Sprites/BG-Static.png" id="2_q7pxp"]
 [ext_resource type="PackedScene" uid="uid://dsowhyub8bnxn" path="res://Assets/Scenes/test_character.tscn" id="3_6o2em"]
 
 [node name="Root" type="Node2D"]
@@ -8,6 +9,7 @@
 [node name="InitialBG" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, -1941)
+texture = ExtResource("2_q7pxp")
 
 [node name="Starter Platform" parent="." instance=ExtResource("2_6o2em")]
 position = Vector2(0, 196)
