@@ -141,7 +141,6 @@ animations = [{
 size = Vector2(11, 2)
 
 [node name="PogoGirl" type="CharacterBody2D"]
-position = Vector2(211, 137)
 script = ExtResource("1_5unk0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

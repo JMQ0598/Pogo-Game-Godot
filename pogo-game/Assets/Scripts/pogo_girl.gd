@@ -6,6 +6,8 @@ var isMidair: bool = true
 @export var speed: int = 1000
 @export var jump_speed = -1800
 @export var gravity: int = 4000
+@export var bounce: int = 200
+@export var jump: int = 400
 @export_range(0.0, 1.0) var friction: float = 0.1
 @export_range(0.0, 1.0) var acceleration: float = 0.25
 
@@ -27,4 +29,6 @@ func _physics_process(delta: float) -> void:
 			velocity.x = lerp(velocity.x, dir * speed, acceleration)
 		else:
 			velocity.x = lerp(velocity.x, 0.0, friction)
+	else:
+		velocity.y = bounce * delta
 	move_and_slide()
