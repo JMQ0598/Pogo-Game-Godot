@@ -7,9 +7,9 @@
 size = Vector2(64, 64)
 
 [node name="Test Character" type="Node2D"]
+script = ExtResource("1_ivwok")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_ivwok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_otokt")
