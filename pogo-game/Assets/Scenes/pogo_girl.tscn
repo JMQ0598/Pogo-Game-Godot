@@ -141,6 +141,7 @@ animations = [{
 size = Vector2(11, 2)
 
 [node name="PogoGirl" type="Node2D"]
+position = Vector2(-1, 0)
 script = ExtResource("1_5unk0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -150,6 +151,7 @@ animation = &"bounce"
 frame_progress = 0.6637431
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-3.5, 15)
