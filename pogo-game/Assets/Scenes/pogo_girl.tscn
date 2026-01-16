@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cw56xyjx7etgj"]
+[gd_scene load_steps=23 format=3 uid="uid://cw56xyjx7etgj"]
 
 [ext_resource type="Script" uid="uid://dek7ail07rx5a" path="res://Assets/Scripts/pogo_girl.gd" id="1_5unk0"]
 [ext_resource type="Texture2D" uid="uid://b06bi5m8320tb" path="res://Assets/Sprites/Pogo_Girl.png" id="1_pg05t"]
@@ -137,14 +137,20 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5unk0"]
+size = Vector2(11, 2)
+
 [node name="PogoGirl" type="Node2D"]
 script = ExtResource("1_5unk0")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(108, 53)
 sprite_frames = SubResource("SpriteFrames_qmyka")
 animation = &"bounce"
 frame_progress = 0.6637431
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-3.5, 15)
+shape = SubResource("RectangleShape2D_5unk0")
