@@ -7,5 +7,5 @@ extends Camera2D
 func _physics_process(_delta):
 	
 	# Set to match position of target
-	if (!can_go_down and follow_target.global_position.y < global_position.y):
+	if (can_go_down or follow_target.global_position.y < global_position.y):
 		global_position.y = follow_target.global_position.y
