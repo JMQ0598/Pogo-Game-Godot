@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pogo Game"
-run/main_scene="uid://cijwn6ftib2hu"
+run/main_scene="uid://llc5lrewrtte"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
