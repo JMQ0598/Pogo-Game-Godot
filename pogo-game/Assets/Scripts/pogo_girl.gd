@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 
 var isMidair: bool = true
+@export var health: int = 3
 @export var speed: int = 1000
 @export var jump_speed = -1800
 @export var gravity: int = 4000
