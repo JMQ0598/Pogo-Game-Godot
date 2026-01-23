@@ -8,6 +8,7 @@ size = Vector2(64, 64)
 
 [node name="Test Character" type="Node2D"]
 script = ExtResource("1_ivwok")
+metadata/Type = "Player"
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 

@@ -23,5 +23,5 @@ script = ExtResource("4_wmxxr")
 follow_target = NodePath("../Test Character")
 
 [node name="Boulder" parent="." instance=ExtResource("1_morkg")]
-position = Vector2(-200, -204)
+position = Vector2(3.9999847, -233.00002)
 scale = Vector2(2.5, 2.5)

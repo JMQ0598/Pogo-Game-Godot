@@ -5,6 +5,7 @@ var rng = RandomNumberGenerator.new()
 @export var gravity : float = 30
 @export var jump_force : float = -500
 @export var movement_speed : float = 200
+@export var health : int = 3
 
 func _ready():
 	pass
