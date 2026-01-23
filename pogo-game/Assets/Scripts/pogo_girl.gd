@@ -20,10 +20,10 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_floor():
 		velocity.y = 0
-		await get_tree().create_timer(1.0).timeout
+		await get_tree().create_timer(0.5).timeout
 		velocity.y = bounce * delta
 	else:
-		velocity.y = gravity * delta
+		velocity.y = velocity.y + gravity * delta
 		var dir = Input.get_axis('walk_left','walk_right')
 		if dir != 0:
 			velocity.x = dir * speed
