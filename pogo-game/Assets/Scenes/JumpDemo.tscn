@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://llc5lrewrtte"]
+[gd_scene load_steps=4 format=3 uid="uid://llc5lrewrtte"]
 
 [ext_resource type="PackedScene" uid="uid://cw56xyjx7etgj" path="res://Assets/Scenes/pogo_girl.tscn" id="1_478r5"]
 [ext_resource type="PackedScene" uid="uid://bxb3162d0x5dk" path="res://Assets/Scenes/platform.tscn" id="2_ew1db"]
+[ext_resource type="Script" uid="uid://bb2m6aukep01g" path="res://Assets/Scripts/camera_follow.gd" id="3_ew1db"]
 
 [node name="JumpDemo" type="Node2D"]
 
 [node name="PogoGirl" parent="." instance=ExtResource("1_478r5")]
-position = Vector2(591, 167)
 
 [node name="Platform" parent="." instance=ExtResource("2_ew1db")]
-position = Vector2(589, 295)
+position = Vector2(0, 142)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("follow_target")]
+script = ExtResource("3_ew1db")
+follow_target = NodePath("../PogoGirl")
+can_go_down = true
