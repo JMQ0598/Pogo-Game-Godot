@@ -17,3 +17,4 @@ texture = ExtResource("1_i5wvk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_i5wvk")
+one_way_collision = true

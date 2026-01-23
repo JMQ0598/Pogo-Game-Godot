@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
-var isMidair: bool = true
+@export var physics_scale: int = 1000
 @export var health: int = 3
-@export var speed: int = 1000
-@export var jump_speed = -1800
-@export var gravity: int = 4000
-@export var bounce: int = -90000
+@export var speed: int = 1
+@export var jump_speed: int = -18
+@export var gravity: int = 4
+@export var bounce: int = -50
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,9 +21,12 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		velocity.y = 0
 		await get_tree().create_timer(0.5).timeout
-		velocity.y = bounce * delta
+		velocity.y = bounce * physics_scale * delta
 	else:
-		velocity.y = velocity.y + gravity * delta
+		velocity.y = clamp(
+			velocity.y + gravity * physics_scale * delta, 
+			velocity.y + gravity * physics_scale * delta,
+			10000)
 		var dir = Input.get_axis('walk_left','walk_right')
 		if dir != 0:
 			velocity.x = dir * speed
