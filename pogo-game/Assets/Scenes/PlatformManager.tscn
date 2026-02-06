@@ -1,9 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cacs1lk0pxut2"]
+[gd_scene load_steps=2 format=3 uid="uid://cacs1lk0pxut2"]
 
 [ext_resource type="Script" uid="uid://bceqqv1hwdk06" path="res://Assets/Scenes/platform_manager.gd" id="1_v3qkp"]
-[ext_resource type="PackedScene" uid="uid://bxb3162d0x5dk" path="res://Assets/Scenes/platform.tscn" id="2_4ipci"]
 
 [node name="PlatformManager" type="Node2D"]
 script = ExtResource("1_v3qkp")
-
-[node name="Platform" parent="." instance=ExtResource("2_4ipci")]

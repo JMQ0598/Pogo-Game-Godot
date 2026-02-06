@@ -1,17 +1,19 @@
 extends Node2D
 
-var platformPrefab
-@export var delay_seconds: int = 1
-var count = 0
+var platform_prefab = preload("res://Assets/Scenes/platform.tscn")
+@export var follow_target : Node2D = null
+@export var space_required: int = 400
+var next_platform_level: int = -600
 
 func _ready() -> void:
-	platformPrefab = $Platform
-	print(DisplayServer.window_get_size())
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+	pass
 	
-	await get_tree().create_timer(delay_seconds).timeout
-	print(count, 'seconds has passed')
+func _process(delta: float) -> void:
+	if follow_target.global_position.y - next_platform_level < space_required:
+		var platform_copy = platform_prefab.instantiate()
+		platform_copy.global_position = Vector2(0, next_platform_level)
+		add_child(platform_copy)
+		next_platform_level -= 440
+	
+	
 	

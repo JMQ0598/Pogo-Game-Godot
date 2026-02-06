@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var physics_scale: int = 1000
 @export var health: int = 3
-@export var speed: int = 300
+@export var speed: int = 100
 @export var jump_speed: int = -18
 @export var gravity: int = 4
 @export var bounce: int = -50

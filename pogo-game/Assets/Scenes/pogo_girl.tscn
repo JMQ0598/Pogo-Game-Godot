@@ -148,7 +148,6 @@ script = ExtResource("1_5unk0")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_qmyka")
 animation = &"bounce"
-frame_progress = 0.6637431
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
