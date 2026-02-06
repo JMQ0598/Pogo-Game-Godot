@@ -19,6 +19,7 @@ position = Vector2(0, 196)
 [node name="Test Character" parent="." instance=ExtResource("3_6o2em")]
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("follow_target")]
+process_callback = 0
 script = ExtResource("4_wmxxr")
 follow_target = NodePath("../Test Character")
 

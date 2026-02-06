@@ -18,4 +18,3 @@ position = Vector2(0, 284)
 scale = Vector2(0.99999994, 0.99999994)
 script = ExtResource("3_ew1db")
 follow_target = NodePath("../PogoGirl")
-can_go_down = true
