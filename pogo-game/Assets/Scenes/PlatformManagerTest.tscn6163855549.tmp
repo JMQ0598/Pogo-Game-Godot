@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctxvbrx7dy5dk"]
+
+[ext_resource type="PackedScene" uid="uid://cw56xyjx7etgj" path="res://Assets/Scenes/pogo_girl.tscn" id="2_fv2x3"]
+[ext_resource type="PackedScene" uid="uid://cacs1lk0pxut2" path="res://Assets/Scenes/PlatformManager.tscn" id="4_fv2x3"]
+[ext_resource type="Script" uid="uid://bb2m6aukep01g" path="res://Assets/Scripts/camera_follow.gd" id="4_nyqyp"]
+
+[node name="PlatformManagerTest" type="Node2D"]
+
+[node name="PogoGirl" parent="." instance=ExtResource("2_fv2x3")]
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("follow_target")]
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("4_nyqyp")
+follow_target = NodePath("../PogoGirl")
+can_go_down = true
+
+[node name="PlatformManager" parent="." node_paths=PackedStringArray("follow_target") instance=ExtResource("4_fv2x3")]
+follow_target = NodePath("../PogoGirl")
