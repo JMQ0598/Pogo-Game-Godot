@@ -5,7 +5,7 @@ extends Camera2D
 @export var can_go_down : bool
 @export var camera_speed : float = 400
 var focus_height : float = 0
-var focus_height_offset : float = 200
+var focus_height_offset : float = 300
 
 func _ready():
 	focus_height = follow_target.global_position.y

@@ -19,8 +19,9 @@ func _process(delta: float) -> void:
 		next_platform_level -= platform_spacing
 		platforms_queue.push_back(platform_copy)
 		
-	if follow_target.global_position.y - next_platform_level > bottom_boundary:
-		platforms_queue.pop_front()
+	if not platforms_queue.is_empty() and follow_target.global_position.y - next_platform_level > bottom_boundary:
+		var oldest_platform = platforms_queue.pop_front()
+		oldest_platform.queue_free()
 		
 	 
 	
