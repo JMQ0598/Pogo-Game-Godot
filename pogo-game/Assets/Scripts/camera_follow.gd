@@ -3,9 +3,9 @@ extends Camera2D
 # Please assign a target in the editor
 @export var follow_target : Node2D = null
 @export var can_go_down : bool
-@export var camera_speed : float = 500
+@export var camera_speed : float = 400
 var focus_height : float = 0
-var focus_height_offset : float = 20
+var focus_height_offset : float = 200
 
 func _ready():
 	focus_height = follow_target.global_position.y
@@ -13,8 +13,9 @@ func _ready():
 func _physics_process(delta):
 	
 	# focus_height checkpoint
-	if (follow_target.global_position.y < focus_height):
-		focus_height = follow_target.global_position.y
+	var camera_target = follow_target.global_position.y + focus_height_offset
+	if (camera_target < focus_height):
+		focus_height = camera_target
 	
 	# DEBUG ONLY
 	if (can_go_down):
