@@ -22,7 +22,7 @@ bounce = -20
 position = Vector2(0, 196)
 
 [node name="Starter Platform2" parent="." instance=ExtResource("2_6o2em")]
-position = Vector2(-355, -22.999996)
+position = Vector2(-355.00003, -23)
 scale = Vector2(0.14267744, 0.15708879)
 
 [node name="Starter Platform3" parent="." instance=ExtResource("2_6o2em")]
@@ -30,6 +30,7 @@ position = Vector2(-152.00002, -172.99998)
 scale = Vector2(0.14267744, 0.15708879)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("follow_target")]
+position = Vector2(0, -150)
 process_callback = 0
 script = ExtResource("4_wmxxr")
 follow_target = NodePath("../PogoGirl")
