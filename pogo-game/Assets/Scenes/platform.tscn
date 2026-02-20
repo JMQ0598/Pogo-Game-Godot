@@ -8,6 +8,7 @@
 size = Vector2(1024, 186)
 
 [node name="Platform" type="StaticBody2D"]
+scale = Vector2(1, 0.5)
 physics_material_override = SubResource("PhysicsMaterial_i5wvk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
