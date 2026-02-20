@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dudx0gs6bucav" path="res://Assets/Scenes/boulder.tscn" id="1_morkg"]
 [ext_resource type="PackedScene" uid="uid://bxb3162d0x5dk" path="res://Assets/Scenes/platform.tscn" id="2_6o2em"]
+[ext_resource type="PackedScene" uid="uid://cw56xyjx7etgj" path="res://Assets/Scenes/pogo_girl.tscn" id="2_morkg"]
 [ext_resource type="Texture2D" uid="uid://djj1orv1cpg3q" path="res://Assets/Sprites/BG-Static.png" id="2_q7pxp"]
-[ext_resource type="PackedScene" uid="uid://dsowhyub8bnxn" path="res://Assets/Scenes/test_character.tscn" id="3_6o2em"]
 [ext_resource type="Script" uid="uid://bb2m6aukep01g" path="res://Assets/Scripts/camera_follow.gd" id="4_wmxxr"]
 
 [node name="Root" type="Node2D"]
@@ -13,15 +13,26 @@ texture_filter = 1
 position = Vector2(0, -1941)
 texture = ExtResource("2_q7pxp")
 
+[node name="PogoGirl" parent="." instance=ExtResource("2_morkg")]
+position = Vector2(-75, 57)
+physics_scale = 870
+bounce = -20
+
 [node name="Starter Platform" parent="." instance=ExtResource("2_6o2em")]
 position = Vector2(0, 196)
 
-[node name="Test Character" parent="." instance=ExtResource("3_6o2em")]
+[node name="Starter Platform2" parent="." instance=ExtResource("2_6o2em")]
+position = Vector2(-355, -22.999996)
+scale = Vector2(0.14267744, 0.15708879)
+
+[node name="Starter Platform3" parent="." instance=ExtResource("2_6o2em")]
+position = Vector2(-152.00002, -172.99998)
+scale = Vector2(0.14267744, 0.15708879)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("follow_target")]
 process_callback = 0
 script = ExtResource("4_wmxxr")
-follow_target = NodePath("../Test Character")
+follow_target = NodePath("../PogoGirl")
 
 [node name="Boulder" parent="." instance=ExtResource("1_morkg")]
 position = Vector2(3.9999847, -233.00002)

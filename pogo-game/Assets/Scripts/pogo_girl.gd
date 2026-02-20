@@ -5,20 +5,17 @@ extends CharacterBody2D
 @export var speed: int = 200
 @export var gravity: int = 2
 @export var bounce: int = -30
+@export var jump_delay: float = 0.3
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$AnimatedSprite2D.play('fall')
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 		
 func _physics_process(delta: float) -> void:
 	
 	if is_on_floor():
 		velocity.y = 0
-		await get_tree().create_timer(0.5).timeout
+		await get_tree().create_timer(jump_delay).timeout
 		velocity.y = bounce * physics_scale * delta
 	else:
 		velocity.y = clamp(
