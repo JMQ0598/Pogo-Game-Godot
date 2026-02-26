@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctxvbrx7dy5dk"]
+[gd_scene load_steps=5 format=3 uid="uid://ctxvbrx7dy5dk"]
 
 [ext_resource type="PackedScene" uid="uid://cw56xyjx7etgj" path="res://Assets/Scenes/pogo_girl.tscn" id="2_fv2x3"]
 [ext_resource type="PackedScene" uid="uid://cacs1lk0pxut2" path="res://Assets/Scenes/PlatformManager.tscn" id="4_fv2x3"]
 [ext_resource type="Script" uid="uid://bb2m6aukep01g" path="res://Assets/Scripts/camera_follow.gd" id="4_nyqyp"]
+[ext_resource type="PackedScene" uid="uid://bxb3162d0x5dk" path="res://Assets/Scenes/platform.tscn" id="4_u4alj"]
 
 [node name="PlatformManagerTest" type="Node2D"]
 
@@ -12,8 +13,19 @@
 scale = Vector2(0.99999994, 0.99999994)
 script = ExtResource("4_nyqyp")
 follow_target = NodePath("../PogoGirl")
-can_go_down = true
 
-[node name="PlatformManager" parent="." node_paths=PackedStringArray("follow_target", "scene_camera") instance=ExtResource("4_fv2x3")]
-follow_target = NodePath("../PogoGirl")
-scene_camera = NodePath("../Camera2D")
+[node name="PlatformManager" parent="Camera2D" node_paths=PackedStringArray("player", "scene_camera") instance=ExtResource("4_fv2x3")]
+player = NodePath("../../PogoGirl")
+scene_camera = NodePath("..")
+
+[node name="Platform" parent="Camera2D/PlatformManager" instance=ExtResource("4_u4alj")]
+position = Vector2(4.000001, -115.999985)
+
+[node name="Platform2" parent="Camera2D/PlatformManager" instance=ExtResource("4_u4alj")]
+position = Vector2(-56.999996, -678)
+
+[node name="Platform3" parent="Camera2D/PlatformManager" instance=ExtResource("4_u4alj")]
+position = Vector2(-33, -494)
+
+[node name="Platform4" parent="Camera2D/PlatformManager" instance=ExtResource("4_u4alj")]
+position = Vector2(8.000002, -301)
