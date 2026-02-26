@@ -1,11 +1,13 @@
 extends CharacterBody2D
 
-@export var physics_scale: int = 1000
 @export var health: int = 3
-@export var speed: int = 200
-@export var gravity: int = 2
-@export var bounce: int = -30
+@export var speed: float = 150
+@export var gravity: float = 20
+@export var bounce: float = -250
 @export var jump_delay: float = 0.3
+
+# JANK
+@export var fps : int = 60
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,15 +15,15 @@ func _ready() -> void:
 		
 func _physics_process(delta: float) -> void:
 	
+	# JANK
+	Engine.max_fps = fps
+	
 	if is_on_floor():
 		velocity.y = 0
 		await get_tree().create_timer(jump_delay).timeout
-		velocity.y = bounce * physics_scale * delta
+		velocity.y = bounce
 	else:
-		velocity.y = clamp(
-			velocity.y + gravity * physics_scale * delta, 
-			velocity.y + gravity * physics_scale * delta,
-			10000)
+		velocity.y += gravity
 		var dir = Input.get_axis('walk_left','walk_right')
 		if dir != 0:
 			velocity.x = dir * speed

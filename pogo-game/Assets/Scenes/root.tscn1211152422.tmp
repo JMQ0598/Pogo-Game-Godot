@@ -15,7 +15,8 @@ texture = ExtResource("2_q7pxp")
 
 [node name="PogoGirl" parent="." instance=ExtResource("2_morkg")]
 position = Vector2(-75, 57)
-fps = 13
+physics_scale = 870
+bounce = -20
 
 [node name="Starter Platform" parent="." instance=ExtResource("2_6o2em")]
 position = Vector2(0, 196)
