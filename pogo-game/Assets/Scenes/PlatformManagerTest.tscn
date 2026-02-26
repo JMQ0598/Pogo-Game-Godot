@@ -14,5 +14,6 @@ script = ExtResource("4_nyqyp")
 follow_target = NodePath("../PogoGirl")
 can_go_down = true
 
-[node name="PlatformManager" parent="." node_paths=PackedStringArray("follow_target") instance=ExtResource("4_fv2x3")]
+[node name="PlatformManager" parent="." node_paths=PackedStringArray("follow_target", "scene_camera") instance=ExtResource("4_fv2x3")]
 follow_target = NodePath("../PogoGirl")
+scene_camera = NodePath("../Camera2D")
